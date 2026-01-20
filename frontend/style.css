@@ -1,0 +1,98 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #ff6b6b, #ffa36c);
+    color: white;
+    padding: 20px 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#upload-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+video, img {
+    width: 300px;
+    height: 225px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+button, input[type="file"] {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#upload-photo {
+    background-color: #e74c3c; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    display: inline-block; 
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+button:hover {
+    background: #43a047;
+}
+
+#status {
+    font-weight: bold;
+    color: #555;
+}
+
+#result-section {
+    margin-top: 20px;
+}
+
+#result-box {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    margin-top: 30px;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍅 Tomato Leaf Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍅 Tomato Disease Detector</h1>
+        <p>ระบบตรวจจับโรคใบมะเขือเทศด้วย AI</p>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <video id="camera" autoplay playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <img id="preview" src="" alt="Preview">
+
+            <div class="buttons">
+                <input type="file" id="file-input" accept="image/*">
+                <button type="button" id="start-camera">📷 เปิดกล้อง</button>
+                <button type="button" id="toggle-camera">🔁 สลับกล้อง</button>
+                <button type="button" id="take-photo">📸 ถ่ายภาพ</button>
+                <div id="upload-photo">☁️ อัปโหลดเพื่อวิเคราะห์</div>
+            </div>
+
+            <p id="status">สถานะ: รอการอัปโหลด...</p>
+        </section>
+
+        <section id="result-section">
+            <h2>ผลการวิเคราะห์</h2>
+            <div id="result-box">
+                <h3 id="disease-th">–</h3>
+                <p id="disease-en"></p>
+                <p id="confidence"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Tomato AI Project</p>
+    </footer>
+
+</body>
+<script src="script.js?v=2"></script>
+</html>
