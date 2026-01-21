@@ -98,11 +98,9 @@ uploadPhotoBtn.addEventListener("click", async () => {
       document.getElementById("disease-th").textContent = result.disease_th;
       document.getElementById("disease-en").textContent = `(${result.prediction})`;
       document.getElementById("confidence").textContent = `ความมั่นใจ: ${result.confidence}`;
-    
-      // ✅ เพิ่มส่วนแสดงคำแนะนำ (ถ้าคุณมี element id="advice" ใน html)
-      // หรือจะเอาไปต่อท้ายชื่อโรคเลยก็ได้ครับ แบบง่ายๆ:
-      statusText.innerText = "💡 คำแนะนำ: " + result.advice; 
-      statusText.style.color = "blue"; // เปลี่ยนสีหน่อยให้เด่นๆ
+      document.getElementById("advice").textContent = "💡 คำแนะนำ: " + result.advice;
+      document.getElementById("advice").style.color = "Blue"
+      
     } else {
       statusText.textContent = `❌ ผิดพลาด: ${result.error}`;
     }
