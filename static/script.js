@@ -1,6 +1,3 @@
-console.log("✅ script.js loaded!");
-alert("✅ script.js is working!");
-
 const startCameraBtn = document.getElementById("start-camera");
 const toggleCameraBtn = document.getElementById("toggle-camera");
 const takePhotoBtn = document.getElementById("take-photo");
