@@ -19,8 +19,8 @@ def after_request(response):
 try:
     # ตรวจสอบ path ให้ชัวร์
     MODEL_PATH = os.path.join(os.path.dirname(__file__), "model_ai", "tomato_disease_model.h5")
-    print(f"⏳ Loading model from: {MODEL_PATH}")
     model = load_model(MODEL_PATH)
+    print(f"⏳ Loading model from: {MODEL_PATH}")
     print("✅ Model loaded successfully!")
 except Exception as e:
     print(f"❌ Error loading model: {e}")
@@ -131,4 +131,4 @@ def _build_cors_preflight_response():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=port, debug=False)
