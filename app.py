@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, make_response
+from flask import Flask, request, jsonify, make_response, render_template
 from keras.models import load_model
 import numpy as np
 import os
@@ -75,7 +75,7 @@ disease_info = {
 
 @app.route("/", methods=["GET"])
 def home():
-    return jsonify({"message": "✅ API Ready!"})
+    return render_template('index.html')
 
 @app.route("/predict", methods=["POST", "OPTIONS"])
 def predict():
